@@ -1,6 +1,6 @@
 import java.util.*;
 
-
+//https://www.interviewbit.com/problems/disjoint-intervals/ read the link
 public class MaxDisjointIntervals {
     static int maxDisjointIntervals(ArrayList<ArrayList<Integer>> ans){
         Collections.sort(ans, (p1,p2)->p1.get(0)-p2.get(0));
@@ -16,6 +16,7 @@ public class MaxDisjointIntervals {
              }
         }return count;
     }
+
 
     public static void main(String[] args) {
 
