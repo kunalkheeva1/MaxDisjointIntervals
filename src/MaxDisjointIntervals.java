@@ -8,9 +8,13 @@ public class MaxDisjointIntervals {
         int currEnd = ans.get(0).get(1);
         for(int i=1; i<ans.size(); i++){
              if(currEnd >= ans.get(i).get(0)){
-                 currEnd = Math.min()
+                 currEnd = Math.min(currEnd,ans.get(i).get(1));
              }
-        }
+             else{
+                 count ++;
+                 currEnd = ans.get(i).get(1);
+             }
+        }return count;
     }
 
     public static void main(String[] args) {
