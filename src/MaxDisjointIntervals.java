@@ -19,7 +19,7 @@ public class MaxDisjointIntervals {
              if(currEnd >= ans.get(i).get(0)){
                  currEnd = Math.min(currEnd,ans.get(i).get(1));
              }
-             //otherwise increase the count and update the current end with the next one
+             //otherwise increase the count and update the current end with the next one and return the count
              else{
 
                  count ++;
